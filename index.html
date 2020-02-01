@@ -327,7 +327,7 @@
     </div>
     <div></div>
     <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
-      <form id="sib-form" method="POST" action="https://2fb7d2d4.sibforms.com/serve/MUIEADmMOtsCAs4R6Ch3LvoKzuq0SIwVTw7wcyYMh6ieeZ6k5QSioBA_p7GGZ64XshOBrl5-8mfm2hz4Aqh_G46jSvFUomeGAAxVdSFca2TQnmKESLz-FpReWFuLZfeRQ9vgZzmjIXRwXdT35dMl9Jn6Xj7DtoopMW4qIaZkxzfHmyIaAiu6ColuVsg784uk0NSY-3sBFlCsp-Jj"
+      <form id="sib-form" method="POST" action="https://2fb7d2d4.sibforms.com/serve/MUIEALS5IczqA4hoeFRYcNFYiIUKDJnoc7FKIX-maEspJQqP5nyjz7PpBxATtdO0nvBFz7Yioz5NaDK5xRdu8Rd0i-HvHJTPKn3_ja89DtsgsGCfeiGBcgoTSZNthQ2oV0amrfZl04xpd20k9xSUzc7xyWNY6V327VC-_8u7m9EnAEmkOZ-5r8rT8jKbj_mmk2rkVSaII8oaDfTc"
         data-type="subscription">
         <div style="padding: 16px 0;">
           <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
@@ -345,9 +345,24 @@
           <div class="sib-input sib-form-block">
             <div class="form__entry entry_block">
               <div class="form__label-row ">
-                <label class="entry__label" style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858; border-width:px;" for="EMAIL" data-required="*">
-                  Introduce tu dirección de e-mail para suscribirte
-                </label>
+
+                <div class="entry__field">
+                  <input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" placeholder="NOMBRE" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; border-width:px;">
+                Puedes inventarte el nombre, solo es para dirigirnos a ti usándolo.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
 
                 <div class="entry__field">
                   <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
@@ -357,7 +372,7 @@
               <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
               </label>
               <label class="entry__specification" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; border-width:px;">
-                Introduce tu dirección de e-mail para suscribirte. Ej.: abc@xyz.com
+                Introduce tu dirección de email para suscribirte. Ej.: emailpersonal@gmail.com
               </label>
             </div>
           </div>
@@ -375,14 +390,19 @@
           </div>
         </div>
         <div style="padding: 16px 0;">
-          <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
+          <div class="sib-form-block sib-divider-form-block">
+            <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
             <div class="sib-text-form-block">
               <p>Tu dirección de e-mail solo se utilizará para enviarte nuestro boletín mensual y puntualmente información sobre "Haruki.es". Puedes darte de baja en cualquier momento gracias al enlace que se incluye en cada e-mail.</p>
             </div>
           </div>
         </div>
         <div style="padding: 16px 0;">
-          <div class="sib-form-block" style="font-size:14px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent; border-width:px;">
+          <div class="sib-form-block" style="font-size:12px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent; border-width:px;">
             <div class="sib-text-form-block">
               <p>
                 <a href="https://sendinblue.com" target="_blank">Términos y política de privacidad</a>
