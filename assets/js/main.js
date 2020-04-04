@@ -23,7 +23,7 @@
 				$body.removeClass('is-preload');
 
 				// Total elements
-				var totalElements = 4;
+				var totalElements = 13;
 
 				// Prepare array for elements
 				var elements = [];
