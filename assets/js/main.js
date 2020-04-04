@@ -22,8 +22,14 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 
+				if (window.location.href.indexOf("index.html") == -1) {
+					console.log("Randomizer not working in this page...");
+					return; 
+				}
+
 				// Total elements
 				var totalElements = 13;
+				var elementsPerBanner = 4;
 
 				// Prepare array for elements
 				var elements = [];
@@ -38,19 +44,28 @@
 				});
 				console.log("Randomizer", elements);
 
-				// Reinsert elements				
+				// Reinsert elements		
+				var currentBanner = 1;
+				var currentElement = 1;		
 				for (let index = 1; index < totalElements; index++) {
 
 					var element = $(".features" + elements[index - 1]);					
-					element.insertBefore(".banner" + index);
-					console.log(".features" + elements[index - 1], " before ", "banner" + index, element);
+					element.insertBefore(".banner" + currentBanner);
+					console.log(".features" + elements[index - 1], " before ", "banner" + currentBanner);
+
+					if (currentElement == elementsPerBanner) {
+						currentBanner++;
+						currentElement = 1;
+					} else {
+						currentElement++;
+					}
 					
 				}
 
 				// Append the last element
 				var element = $(".features" + elements[totalElements - 1]);
-				element.insertAfter(".banner" + (totalElements - 1));
-				console.log(".features" + elements[totalElements - 1], " after  ", "banner" + (totalElements - 1));
+				element.insertAfter(".banner" + (currentBanner - 1));
+				console.log(".features" + elements[totalElements - 1], " after  ", "banner" + (currentBanner - 1) );
 
 				
 			}, 100);
