@@ -41,16 +41,16 @@
 				// Reinsert elements				
 				for (let index = 1; index < totalElements; index++) {
 
-					var element = $("#features" + elements[index - 1]);					
-					element.insertBefore("#banner" + index);
-					console.log("#features" + elements[index - 1], " before ", "#banner" + index);
+					var element = $(".features" + elements[index - 1]);					
+					element.insertBefore(".banner" + index);
+					console.log(".features" + elements[index - 1], " before ", "banner" + index, element);
 					
 				}
 
 				// Append the last element
-				var element = $("#features" + elements[totalElements - 1]);
-				element.insertAfter("#banner" + (totalElements - 1));
-				console.log("#features" + elements[totalElements - 1], " after  ", "#banner" + (totalElements - 1));
+				var element = $(".features" + elements[totalElements - 1]);
+				element.insertAfter(".banner" + (totalElements - 1));
+				console.log(".features" + elements[totalElements - 1], " after  ", "banner" + (totalElements - 1));
 
 				
 			}, 100);
